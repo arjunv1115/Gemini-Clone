@@ -1,0 +1,72 @@
+.modal-scrim {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.45);
+}
+.modal {
+  width: min(440px, 100%);
+  padding: 20px 24px 24px;
+  border-radius: 20px;
+  background: var(--bg);
+  box-shadow: var(--shadow);
+}
+.modal-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.modal-head h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+.setting {
+  margin: 0 0 22px;
+  padding: 0;
+  border: 0;
+}
+.setting legend,
+.setting-label {
+  display: block;
+  padding: 0;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.setting-hint {
+  margin: 0 0 10px;
+  font-size: 14px;
+  color: var(--text-muted);
+}
+.segmented {
+  display: inline-flex;
+  padding: 3px;
+  border-radius: 50px;
+  background: var(--surface);
+}
+.segmented button {
+  padding: 7px 18px;
+  border-radius: 50px;
+  font-size: 14px;
+  color: var(--text-muted);
+}
+.segmented button.selected {
+  background: var(--bg);
+  color: var(--text);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+.danger {
+  padding: 8px 18px;
+  border-radius: 50px;
+  border: 1px solid var(--danger);
+  color: var(--danger);
+  font-size: 14px;
+}
+.danger:hover:not(:disabled) {
+  background: color-mix(in srgb, var(--danger) 10%, transparent);
+}

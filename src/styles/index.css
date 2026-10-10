@@ -1,0 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap");
+@import "./theme.css";
+@import "./layout.css";
+@import "./sidebar.css";
+@import "./chat.css";
+@import "./prompt.css";
+@import "./modal.css";
